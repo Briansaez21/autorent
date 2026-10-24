@@ -1,0 +1,77 @@
+{
+  "info": {
+    "name": "AutoRent",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Crear Auto",
+      "request": {
+        "method": "POST",
+        "header": [{"key":"Content-Type","value":"application/json"}],
+        "body": {"mode":"raw","raw":"{\n  \"placa\": \"ABC123\",\n  \"marca\": \"Toyota\",\n  \"modelo\": \"Corolla\",\n  \"anio\": 2025,\n  \"precioPorDia\": 150000\n}"},
+        "url": {"raw":"http://localhost:8080/api/autos","protocol":"http","host":["localhost"],"port":"8080","path":["api","autos"]}
+      }
+    },
+    {
+      "name": "Consultar Auto",
+      "request": {
+        "method": "GET",
+        "url": {"raw":"http://localhost:8080/api/autos/1","protocol":"http","host":["localhost"],"port":"8080","path":["api","autos","1"]}
+      }
+    },
+    {
+      "name": "Autos Disponibles",
+      "request": {
+        "method": "GET",
+        "url": {"raw":"http://localhost:8080/api/autos/disponibles","protocol":"http","host":["localhost"],"port":"8080","path":["api","autos","disponibles"]}
+      }
+    },
+    {
+      "name": "Crear Cliente",
+      "request": {
+        "method": "POST",
+        "header": [{"key":"Content-Type","value":"application/json"}],
+        "body": {"mode":"raw","raw":"{\n  \"nombre\": \"Carlos Pérez\",\n  \"documento\": \"123456789\",\n  \"telefono\": \"3001234567\",\n  \"email\": \"carlos@email.com\"\n}"},
+        "url": {"raw":"http://localhost:8080/api/clientes","protocol":"http","host":["localhost"],"port":"8080","path":["api","clientes"]}
+      }
+    },
+    {
+      "name": "Consultar Cliente",
+      "request": {
+        "method": "GET",
+        "url": {"raw":"http://localhost:8080/api/clientes/1","protocol":"http","host":["localhost"],"port":"8080","path":["api","clientes","1"]}
+      }
+    },
+    {
+      "name": "Crear Alquiler",
+      "request": {
+        "method": "POST",
+        "header": [{"key":"Content-Type","value":"application/json"}],
+        "body": {"mode":"raw","raw":"{\n  \"clienteId\": 1,\n  \"autoId\": 1,\n  \"cantidadDias\": 5\n}"},
+        "url": {"raw":"http://localhost:8080/api/alquileres","protocol":"http","host":["localhost"],"port":"8080","path":["api","alquileres"]}
+      }
+    },
+    {
+      "name": "Consultar Alquiler",
+      "request": {
+        "method": "GET",
+        "url": {"raw":"http://localhost:8080/api/alquileres/1","protocol":"http","host":["localhost"],"port":"8080","path":["api","alquileres","1"]}
+      }
+    },
+    {
+      "name": "Finalizar Alquiler",
+      "request": {
+        "method": "PUT",
+        "url": {"raw":"http://localhost:8080/api/alquileres/1/finalizar","protocol":"http","host":["localhost"],"port":"8080","path":["api","alquileres","1","finalizar"]}
+      }
+    },
+    {
+      "name": "Finalizar Alquiler Ya Finalizado (error)",
+      "request": {
+        "method": "PUT",
+        "url": {"raw":"http://localhost:8080/api/alquileres/1/finalizar","protocol":"http","host":["localhost"],"port":"8080","path":["api","alquileres","1","finalizar"]}
+      }
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+package com.autorent.application.service;
+import com.autorent.domain.model.Auto;
+import java.math.BigDecimal;
+public interface RegistrarAutoUseCase { Auto registrar(String placa, String marca, String modelo, Integer anio, BigDecimal precioPorDia); }
