@@ -1,8 +1,8 @@
 package com.autorent.infrastructure.adapter.input.rest;
 
-import com.autorent.application.service.ConsultarAutoUseCase;
-import com.autorent.application.service.ConsultarAutosDisponiblesUseCase;
-import com.autorent.application.service.RegistrarAutoUseCase;
+import com.autorent.application.port.input.ConsultarAutoUseCase;
+import com.autorent.application.port.input.ConsultarAutosDisponiblesUseCase;
+import com.autorent.application.port.input.RegistrarAutoUseCase;
 import com.autorent.domain.model.Auto;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

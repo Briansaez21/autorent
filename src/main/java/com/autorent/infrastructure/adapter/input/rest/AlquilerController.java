@@ -1,8 +1,8 @@
 package com.autorent.infrastructure.adapter.input.rest;
 
-import com.autorent.application.service.ConsultarAlquilerUseCase;
-import com.autorent.application.service.CrearAlquilerUseCase;
-import com.autorent.application.service.FinalizarAlquilerUseCase;
+import com.autorent.application.port.input.ConsultarAlquilerUseCase;
+import com.autorent.application.port.input.CrearAlquilerUseCase;
+import com.autorent.application.port.input.FinalizarAlquilerUseCase;
 import com.autorent.domain.model.Alquiler;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

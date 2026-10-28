@@ -1,3 +1,3 @@
-package com.autorent.application.service;
+package com.autorent.application.port.input;
 import com.autorent.domain.model.Alquiler;
 public interface ConsultarAlquilerUseCase { Alquiler consultar(Long id); }

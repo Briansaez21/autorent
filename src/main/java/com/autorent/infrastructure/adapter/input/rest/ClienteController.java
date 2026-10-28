@@ -1,7 +1,7 @@
 package com.autorent.infrastructure.adapter.input.rest;
 
-import com.autorent.application.service.ConsultarClienteUseCase;
-import com.autorent.application.service.RegistrarClienteUseCase;
+import com.autorent.application.port.input.ConsultarClienteUseCase;
+import com.autorent.application.port.input.RegistrarClienteUseCase;
 import com.autorent.domain.model.Cliente;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
